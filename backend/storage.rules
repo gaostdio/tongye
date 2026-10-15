@@ -1,0 +1,22 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    function owner(uid) { return request.auth != null && request.auth.uid == uid; }
+    function member(coupleId) {
+      return request.auth != null
+        && firestore.exists(/databases/(default)/documents/couples/$(coupleId))
+        && request.auth.uid in firestore.get(/databases/(default)/documents/couples/$(coupleId)).data.members;
+    }
+    function imageUpload() { return request.resource.size < 20 * 1024 * 1024 && request.resource.contentType.matches('image/.*'); }
+    match /private/{uid}/{photoId} {
+      allow read, delete: if owner(uid);
+      allow create, update: if owner(uid) && imageUpload();
+    }
+    match /couples/{coupleId}/{uid}/{photoId} {
+      allow read: if member(coupleId);
+      allow create, update: if member(coupleId) && owner(uid) && imageUpload();
+      allow delete: if member(coupleId) && owner(uid);
+    }
+    match /{allPaths=**} { allow read, write: if false; }
+  }
+}

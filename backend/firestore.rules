@@ -1,0 +1,53 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function owner(uid) { return signedIn() && request.auth.uid == uid; }
+    function member(coupleId) {
+      return signedIn() && exists(/databases/$(database)/documents/couples/$(coupleId))
+        && request.auth.uid in get(/databases/$(database)/documents/couples/$(coupleId)).data.members;
+    }
+    match /users/{uid} {
+      allow read: if owner(uid);
+      // Relationship fields are managed by trusted callable functions.
+      allow create: if owner(uid) && request.resource.data.keys().hasOnly(['nickname', 'avatar']);
+      allow update: if owner(uid) && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['nickname', 'avatar']);
+      allow delete: if false;
+      match /privateDiaries/{diaryId} {
+        allow read, delete: if owner(uid);
+        allow create, update: if owner(uid)
+          && request.resource.data.authorId == uid
+          && request.resource.data.visibility == 'PRIVATE';
+      }
+    }
+    match /couples/{coupleId} {
+      allow read: if member(coupleId);
+      allow write: if false;
+      match /diaries/{diaryId} {
+        allow read, delete: if member(coupleId);
+        allow create: if member(coupleId) && request.resource.data.authorId == request.auth.uid
+          && request.resource.data.visibility == 'SHARED' && request.resource.data.updatedAt == request.time;
+        allow update: if member(coupleId) && request.resource.data.authorId == resource.data.authorId
+          && request.resource.data.visibility == 'SHARED' && request.resource.data.updatedAt == request.time;
+        match /elements/{elementId} {
+          allow read: if member(coupleId);
+          allow create: if member(coupleId) && exists(/databases/$(database)/documents/couples/$(coupleId)/diaries/$(diaryId))
+            && request.resource.data.createdBy == request.auth.uid
+            && request.resource.data.updatedBy == request.auth.uid && request.resource.data.updatedAt == request.time;
+          allow update: if member(coupleId) && request.resource.data.createdBy == resource.data.createdBy
+            && request.resource.data.updatedBy == request.auth.uid && request.resource.data.updatedAt == request.time;
+          // Deletes become tombstones so offline clients cannot resurrect elements.
+          allow delete: if false;
+        }
+      }
+      match /anniversaries/{id} { allow read, write: if member(coupleId); }
+      match /notes/{id} {
+        allow read: if member(coupleId);
+        allow create: if member(coupleId) && request.resource.data.authorId == request.auth.uid;
+        allow update: if member(coupleId) && resource.data.authorId == request.auth.uid && request.resource.data.authorId == request.auth.uid;
+        allow delete: if member(coupleId) && resource.data.authorId == request.auth.uid;
+      }
+    }
+    match /{document=**} { allow read, write: if false; }
+  }
+}

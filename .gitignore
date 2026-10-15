@@ -1,0 +1,17 @@
+.gradle/
+.kotlin/
+**/build/
+local.properties
+*.jks
+*.keystore
+.idea/
+.handoff/
+
+# Generated distributions and local data
+deliverables/
+__pycache__/
+*.apk
+*.couple
+*.db
+*.db-wal
+*.db-shm

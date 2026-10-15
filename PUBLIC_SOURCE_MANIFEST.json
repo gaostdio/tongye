@@ -1,0 +1,349 @@
+{
+  "format": "tongye-public-source-1",
+  "version": "0.2.7",
+  "prepared_date": "2026-10-14",
+  "original_archive_sha256": "df0e0c41848d6050d862a7f5c1a092f09c9de412296b74e575dc2589d329ec5c",
+  "changes": [
+    "README distribution note",
+    "generated output ignore rules",
+    "optional historical summaries in handoff packager",
+    "GitHub upload guide"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 186,
+      "sha256": "e00ce02fa3d82aa910aae69eefc2f8dad1a219729fb219f43d4a63f85a92152b"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 2715,
+      "sha256": "6890adad41285a83e6c476824a6e4280c9d2c0631b21921659e72ec1ed539cc9"
+    },
+    {
+      "path": "GITHUB-UPLOAD.md",
+      "bytes": 1710,
+      "sha256": "99d9816813f8645354c5a2a5d3b40032e2e19450365843fc8208b11ac1a3b451"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 13363,
+      "sha256": "f26c26f98399273ebdd491f6e93cc0847e7956fa54a9d196971090b0332971c5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10700,
+      "sha256": "c8c5707387a15a12dac132f4aa968166ced1ef9ad06c03a8257e68b50a00888d"
+    },
+    {
+      "path": "app/build.gradle.kts",
+      "bytes": 3419,
+      "sha256": "fe49563c02f9696714e569625f13243d96648287d408bd81d4c17d0a6cb00707"
+    },
+    {
+      "path": "app/schemas/app.tongye.diary.DiaryDatabase/1.json",
+      "bytes": 1023,
+      "sha256": "1a31dfae8abeb59ececa26d5fb352d7e6644c84caf3d821a374447e2c04a4c24"
+    },
+    {
+      "path": "app/schemas/app.tongye.diary.DiaryDatabase/2.json",
+      "bytes": 1944,
+      "sha256": "9d549bbf83409237f2a5ac55b0b0315570bd166098d12ccfc5c96fb1754dd674"
+    },
+    {
+      "path": "app/src/main/AndroidManifest.xml",
+      "bytes": 1856,
+      "sha256": "2209373bffe94381f60acf9e0c8c400ddc0593557b4fb3f0644f1914988489d7"
+    },
+    {
+      "path": "app/src/main/java/app/tongye/diary/App.kt",
+      "bytes": 26647,
+      "sha256": "ea8ec1dc421f60b4d51e23d942114e2357e7a6b5320b9f6c21d4dbe66d37be4b"
+    },
+    {
+      "path": "app/src/main/java/app/tongye/diary/BackupFiles.kt",
+      "bytes": 2658,
+      "sha256": "94b840d75297e2f42d83dac35f2882bf771ca570dccf055d21fc9c0496a84c85"
+    },
+    {
+      "path": "app/src/main/java/app/tongye/diary/CanvasPage.kt",
+      "bytes": 6096,
+      "sha256": "e0a3915a0ea80bbb4ff8512e95a22644fc7b02ac5a31529eaf9aca7d28a2f03f"
+    },
+    {
+      "path": "app/src/main/java/app/tongye/diary/Design.kt",
+      "bytes": 13006,
+      "sha256": "d47673c5a8c2cc7a3a564b2328004d8f7b207f5a4a5eb722827e3edc8d477b62"
+    },
+    {
+      "path": "app/src/main/java/app/tongye/diary/DiaryDetail.kt",
+      "bytes": 8657,
+      "sha256": "c4b5415ba55775eb47ac4657491674f652c821bb0443801fb10d92b3bead39b6"
+    },
+    {
+      "path": "app/src/main/java/app/tongye/diary/DiaryEditor.kt",
+      "bytes": 19105,
+      "sha256": "c6bc56b6023de6946adad0008a07decc1fbdcfc5bd9840d908d5600ab08dd381"
+    },
+    {
+      "path": "app/src/main/java/app/tongye/diary/DiaryStorage.kt",
+      "bytes": 3282,
+      "sha256": "47c5d0ba922144e83820090e1717e104acbb247a59106ca9d857f3f720678ee8"
+    },
+    {
+      "path": "app/src/main/java/app/tongye/diary/DiaryViewModel.kt",
+      "bytes": 13490,
+      "sha256": "bd8c72f29b7367ac9873f9cf58986620048bf0a1e647c2ab8ea188c099e5cf54"
+    },
+    {
+      "path": "app/src/main/java/app/tongye/diary/Exchange.kt",
+      "bytes": 27453,
+      "sha256": "b5fe229b9445896ab34d79cae1f4cbae87f36f848bda20db744792a990c64087"
+    },
+    {
+      "path": "app/src/main/java/app/tongye/diary/ExchangeFiles.kt",
+      "bytes": 11441,
+      "sha256": "9cec569af048abaf8ee40dc00f85f5ed68bc41823e49fc221ad214e30b1350cc"
+    },
+    {
+      "path": "app/src/main/java/app/tongye/diary/ExchangeScreen.kt",
+      "bytes": 14194,
+      "sha256": "f6c8d9e4e9e46cae7cc2144c909b1ca7d09905fa27ae105818614e2d9723a888"
+    },
+    {
+      "path": "app/src/main/java/app/tongye/diary/MainActivity.kt",
+      "bytes": 1104,
+      "sha256": "95d4c740217b49f3b950c0462c45fb8410b855dd1631beaed308ca66bd157b4b"
+    },
+    {
+      "path": "app/src/main/java/app/tongye/diary/MediaViews.kt",
+      "bytes": 5060,
+      "sha256": "2ceadbc4f31145532bd46c2beb594508d714817296f2d97e2977bfd8253a2018"
+    },
+    {
+      "path": "app/src/main/java/app/tongye/diary/MemoriesScreen.kt",
+      "bytes": 9338,
+      "sha256": "946e558e9d7bc57fe28d10075e46b20b9459dd52b885455db76e1c9bcdbd9d2a"
+    },
+    {
+      "path": "app/src/main/java/app/tongye/diary/Models.kt",
+      "bytes": 5489,
+      "sha256": "b338ab11f03704fa50271e7a74df18419e07a787ebec635bf803342d92aa3270"
+    },
+    {
+      "path": "app/src/main/java/app/tongye/diary/SettingsScreen.kt",
+      "bytes": 10271,
+      "sha256": "36e733a20d107573d95548c524b6149aa48d2014286218e4cdc77baea08824d0"
+    },
+    {
+      "path": "app/src/main/java/app/tongye/diary/WorkspaceDocuments.kt",
+      "bytes": 2621,
+      "sha256": "e69a95917405f3900399bc52738e8c4fb827bcd1efd3ce005fa7a704e0210c2c"
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_tongye.xml",
+      "bytes": 489,
+      "sha256": "18234fc430e2ffa99f5efd510f6bcdeefc96bee316d8cecea1a6c1822ca84f42"
+    },
+    {
+      "path": "app/src/main/res/values-v27/styles.xml",
+      "bytes": 493,
+      "sha256": "39f33990ff58adac2911e4d9b215c1a86981e2dbff13bfaf0ac1fa51c2baca87"
+    },
+    {
+      "path": "app/src/main/res/values/styles.xml",
+      "bytes": 427,
+      "sha256": "e5e45b85a308cfb649886acb0eb29583a660a81fe1aca3448d951e866393e811"
+    },
+    {
+      "path": "app/src/main/res/xml/backup_rules.xml",
+      "bytes": 254,
+      "sha256": "6235c99aeedc4702f2738276dfe65a70523cfd7f8796e29f7054b5b332135f2d"
+    },
+    {
+      "path": "app/src/main/res/xml/data_extraction_rules.xml",
+      "bytes": 591,
+      "sha256": "f2f358d89c06fa712f6887b9bac1d9859b8843ec79f614084d32029efb76db5c"
+    },
+    {
+      "path": "app/src/main/res/xml/share_paths.xml",
+      "bytes": 167,
+      "sha256": "60f0c9b3dfbae786a8b6efff174c2b4d1fed7c0cb379876e6197814e520a83db"
+    },
+    {
+      "path": "app/src/test/java/app/tongye/diary/ExchangeTest.kt",
+      "bytes": 29344,
+      "sha256": "cc200a6c4a082088569d6b1de95d60b894de75ff1e98d47fec0e6f0876b155be"
+    },
+    {
+      "path": "app/src/test/java/app/tongye/diary/ModelsTest.kt",
+      "bytes": 1281,
+      "sha256": "5304eb3487b6a5f69a9b2ca7aa30813cd2890a00225d632a211f1aa47c39ffdf"
+    },
+    {
+      "path": "app/src/test/java/app/tongye/diary/StreamingFilesTest.kt",
+      "bytes": 8827,
+      "sha256": "b8ef271c4f076746ad25b6b6a5a027cc1142dbabd964595da60c62eac86a5809"
+    },
+    {
+      "path": "app/src/test/java/app/tongye/diary/VideoMediaTest.kt",
+      "bytes": 6472,
+      "sha256": "ca7fadac73e5969e1c7b338386cf39ae7404a0d5fd93279f33d1e525d0e7a94d"
+    },
+    {
+      "path": "app/src/test/java/app/tongye/diary/WorkspaceDocumentsTest.kt",
+      "bytes": 3927,
+      "sha256": "0786c54bc28be1fd66fabde67da613ae95d6f971634d320486b2123d740f4ea9"
+    },
+    {
+      "path": "backend/firestore.rules",
+      "bytes": 2993,
+      "sha256": "b83ec8349166f2504643815abad054e22f5140da04eb59eed1561b9bcea291fe"
+    },
+    {
+      "path": "backend/storage.rules",
+      "bytes": 987,
+      "sha256": "1fd91cb620e678c7c0fa1fe443a4162c3d9a1c0a6f89791413728d958646e382"
+    },
+    {
+      "path": "build.gradle.kts",
+      "bytes": 287,
+      "sha256": "47b251121919733f7b69a6ec65505f5f6733cb5b570597508ea548c965f91877"
+    },
+    {
+      "path": "build.ps1",
+      "bytes": 3014,
+      "sha256": "762630e1e5f6b2b5d531335c0323ed2b912021ab54beaffd9991ff76007bbb95"
+    },
+    {
+      "path": "docs/cloud-design.md",
+      "bytes": 3478,
+      "sha256": "60ab88a50852053593db56d007f6d38e17b670a6a4cff96f12ff5df98a5da527"
+    },
+    {
+      "path": "docs/handoff-review.md",
+      "bytes": 3397,
+      "sha256": "ee7c3115a25200bc94d2d3ffdd81913d920b02d01cbe780d1ccdbb7873bd2a87"
+    },
+    {
+      "path": "docs/local-exchange-guide.md",
+      "bytes": 9174,
+      "sha256": "7e0416d02948f9c0a120e7a00da19e3c5250346550f56e4f91a674b705ab9d1d"
+    },
+    {
+      "path": "docs/local-exchange-plan.md",
+      "bytes": 11888,
+      "sha256": "d85cea63ffaa53c30ac503401d7f590658b67d04662f375aa0e5c3ba68f91feb"
+    },
+    {
+      "path": "docs/product-plan.md",
+      "bytes": 14062,
+      "sha256": "9e51b204cea8dce96f501d3d36b3c9201c6f758168fc1e87c9133c0ca5842930"
+    },
+    {
+      "path": "docs/roadmap.md",
+      "bytes": 5712,
+      "sha256": "6920607f594acb9d860994125b8f3470d97299c551b25ace80f52efbe3100d8c"
+    },
+    {
+      "path": "docs/verification-0.2.0.md",
+      "bytes": 4219,
+      "sha256": "3bc114b23f8e90f54f0ad8937f3aa4a44ac1f0b1da94c7c6d07c7c0012ae75d5"
+    },
+    {
+      "path": "docs/verification-0.2.1.md",
+      "bytes": 2630,
+      "sha256": "dcba9cd59e883a6c4c9163f10653b7b9292f86e079b1c41092d814b099b5e1c2"
+    },
+    {
+      "path": "docs/verification-0.2.2.md",
+      "bytes": 4093,
+      "sha256": "1399d4cb2a4b5dec02bd2a7c5ac18a5d64faccc6e4b7b254db269639334a265b"
+    },
+    {
+      "path": "docs/verification-0.2.3.md",
+      "bytes": 3686,
+      "sha256": "d86ebf2ec3b3bce5536034184574045e1dd52aa13c0390987b267abec4c2b1d2"
+    },
+    {
+      "path": "docs/verification-0.2.4.md",
+      "bytes": 5137,
+      "sha256": "d8b51d5f718a685d1e0a75dd117dd790436f0b0e971a714be94be501b3c0e105"
+    },
+    {
+      "path": "docs/verification-0.2.5.md",
+      "bytes": 6495,
+      "sha256": "f34d470a35eb35998ae1e3342baa9339870d4ed6e6960790d5c02a9c6939df78"
+    },
+    {
+      "path": "docs/verification-0.2.6.md",
+      "bytes": 6675,
+      "sha256": "a8704d5f5f9877a2444e4a8dbd30620c2f1ccf4c77266072eab644c3b6bda50f"
+    },
+    {
+      "path": "docs/verification-0.2.7.md",
+      "bytes": 5558,
+      "sha256": "a28517412a1d53beca70c461d8780b750d4be48cb819f812a583bd153775c084"
+    },
+    {
+      "path": "docs/verification.md",
+      "bytes": 2858,
+      "sha256": "6e5abace7c264cf480b893295c8c8eab6e973a4ed7dc9e10f981def1b27354e3"
+    },
+    {
+      "path": "gradle.properties",
+      "bytes": 164,
+      "sha256": "239540ff9b139e0b2cccd3d81e0a80bbd5f406c0b94ab4c0d50b4549013bab25"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "bytes": 43764,
+      "sha256": "7d3a4ac4de1c32b59bc6a4eb8ecb8e612ccd0cf1ae1e99f66902da64df296172"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "bytes": 253,
+      "sha256": "7e0821d895908883350587c74476b717016ab416320c44dc82a10def916c6fb5"
+    },
+    {
+      "path": "gradlew",
+      "bytes": 8733,
+      "sha256": "b187b4c52e749f5760afdd6fadc31b2a98ad35fb249bf0dff03b72650f320409"
+    },
+    {
+      "path": "gradlew.bat",
+      "bytes": 2937,
+      "sha256": "1d297e00bd21de3ace22b4d7f2de1f9dfa858883d66bbf7c1ccbecccec8f4f3b"
+    },
+    {
+      "path": "settings.gradle.kts",
+      "bytes": 268,
+      "sha256": "b66537484ca1d7c9496ddab50d0ad920d6c9cf807b0215603165c7cd6d384ef8"
+    },
+    {
+      "path": "tools/check_large_photos.py",
+      "bytes": 7929,
+      "sha256": "0c5c2222ad9e77381807e19e066fba38b29fe504ca22e4601998cbaba7f90246"
+    },
+    {
+      "path": "tools/check_media.py",
+      "bytes": 4678,
+      "sha256": "739452413f339011cd94861cc079c707d2872030702c15622d840f1b4005320e"
+    },
+    {
+      "path": "tools/check_storage.py",
+      "bytes": 4806,
+      "sha256": "e187272b6b8f11515ed16c304cdcff2b392609cd6ed2f4c56b59536ca2e32b63"
+    },
+    {
+      "path": "tools/package_handoff.py",
+      "bytes": 5556,
+      "sha256": "1a5305d06f3d38f9810a022ba264641f5f834fad45b4c401b4314fb318b3403e"
+    },
+    {
+      "path": "tools/verify_handoff.py",
+      "bytes": 3132,
+      "sha256": "8cc538185b7d887e4960fe814886a8a61e6b5f19baa907aac8b5638dd59b3b68"
+    }
+  ]
+}
