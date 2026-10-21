@@ -1,14 +1,15 @@
 {
   "format": "tongye-public-source-1",
   "version": "0.2.7",
-  "prepared_date": "2026-10-15",
+  "prepared_date": "2026-10-21",
   "original_archive_sha256": "df0e0c41848d6050d862a7f5c1a092f09c9de412296b74e575dc2589d329ec5c",
   "changes": [
     "README distribution note",
     "generated output ignore rules",
     "optional historical summaries in handoff packager",
     "GitHub upload guide",
-    "Vivid project introduction with usage and development reference"
+    "Vivid project introduction with usage and development reference",
+    "GitHub Releases APK download entry"
   ],
   "files": [
     {
@@ -33,8 +34,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9556,
-      "sha256": "03cd231d16f1447114c34d2bf3e03d4f051f6fe9f8dfb01f38bd72f83b7e3534"
+      "bytes": 10156,
+      "sha256": "d09368483f615cb714540172efbf616c00cd997785990c3d1df11238a207b9c3"
     },
     {
       "path": "app/build.gradle.kts",

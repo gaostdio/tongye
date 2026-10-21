@@ -10,6 +10,12 @@
 
 Android 8.0+ · 首次只填昵称 · 无云端、无注册账号
 
+## 下载体验
+
+**[下载 Android 安装包 · 0.2.7](https://github.com/gaostdio/tongye/releases/download/v0.2.7/tongye-0.2.7.apk)** · [发布说明与 SHA-256 校验文件](https://github.com/gaostdio/tongye/releases/tag/v0.2.7)
+
+适用于 Android 8.0 及以上，不含个人照片或真人卡通贴纸。此为调试证书签名的公开体验包。已有同包名、同签名旧版请备份后覆盖安装；已安装更新版本时请保留现有版本，不要卸载或降级。
+
 ## 把小日子，慢慢写成我们的故事
 
 ### 📖 今天发生的小事，都有地方安放
@@ -70,7 +76,7 @@ Android 8.0+ · 首次只填昵称 · 无云端、无注册账号
 
 本仓库发布的是 **0.2.7 源码版本**，包含日记、自由手账、普通贴纸、评论、GIF / 视频、本地加密交换和界面美化。
 
-**不含个人照片及根据真人照片制作的卡通形象贴纸。** 此版本也不包含后续 0.2.9 的滑动翻阅功能。仓库不附 APK，可按下方说明自行构建；源码整理与上传说明见 [GITHUB-UPLOAD.md](GITHUB-UPLOAD.md)。
+**不含个人照片及根据真人照片制作的卡通形象贴纸。** 此版本也不包含后续 0.2.9 的滑动翻阅功能。APK 可从 [GitHub Releases](https://github.com/gaostdio/tongye/releases/tag/v0.2.7) 下载，源码包本身不附安装包，也可按下方说明自行构建；源码整理与上传说明见 [GITHUB-UPLOAD.md](GITHUB-UPLOAD.md)。
 
 ## 开发与构建
 
