@@ -25,7 +25,7 @@
 
 - 交付文件统一放在项目 `deliverables/` 中，并给出可点击链接；不要复制到桌面根目录。
 - Windows：`./build.ps1 -Verify`；其他系统：`./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug :app:streamingLowMemory`。
-- Android SDK/JDK 由接手机器提供；不要提交 `local.properties`、缓存或签名私钥。
+- Android SDK/JDK 由接手机器提供；不要提交 `local.properties`、缓存或其他签名私钥。用户于 2026-10-27 明确要求公开的 `signing/debug.keystore` 是例外，用途与公开影响见 `signing/README.md`。
 - 当前 48 项测试、96 MiB 堆内存下的 8 项流式测试与 Lint 结果是基线。大量图片必须使用 `ExchangeFiles` / `BackupFiles` 的流式磁盘路径，不得恢复全量 `readBytes` 或 `ByteArrayOutputStream`。根据变更运行相关检查，不把模拟器结果描述为已验证实体手机。
 - 更新 APK 时同步版本号与说明；脚本会按 versionName 命名 APK 并生成 SHA-256。
 - 打包交接用 `tools/package_handoff.py`，压缩包校验用 `tools/verify_handoff.py`；先看参数帮助。打包前更新交接说明和检查记录。

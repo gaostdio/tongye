@@ -78,6 +78,10 @@ Android 8.0+ · 首次只填昵称 · 无云端、无注册账号
 
 **不含个人照片及根据真人照片制作的卡通形象贴纸。** 此版本也不包含后续 0.2.9 的滑动翻阅功能。APK 可从 [GitHub Releases](https://github.com/gaostdio/tongye/releases/tag/v0.2.7) 下载，源码包本身不附安装包，也可按下方说明自行构建；源码整理与上传说明见 [GITHUB-UPLOAD.md](GITHUB-UPLOAD.md)。
 
+## 调试签名
+
+按维护者要求，现有调试签名文件已放在 [signing/debug.keystore](signing/debug.keystore)。**它含已公开的私钥，普通用户安装 APK 不需要下载；任何人均可用它给 APK 签名。** 使用目的、签名核对与适用范围见[调试签名说明](signing/README.md)。
+
 ## 开发与构建
 
 采用 Kotlin、Jetpack Compose、Material 3、ViewModel + StateFlow、Room、Coil 与 AndroidX Biometric。

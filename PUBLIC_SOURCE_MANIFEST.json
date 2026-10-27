@@ -1,7 +1,7 @@
 {
   "format": "tongye-public-source-1",
   "version": "0.2.7",
-  "prepared_date": "2026-10-21",
+  "prepared_date": "2026-10-27",
   "original_archive_sha256": "df0e0c41848d6050d862a7f5c1a092f09c9de412296b74e575dc2589d329ec5c",
   "changes": [
     "README distribution note",
@@ -9,18 +9,19 @@
     "optional historical summaries in handoff packager",
     "GitHub upload guide",
     "Vivid project introduction with usage and development reference",
-    "GitHub Releases APK download entry"
+    "GitHub Releases APK download entry",
+    "Maintainer explicitly requested public debug signing key and documentation"
   ],
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 186,
-      "sha256": "e00ce02fa3d82aa910aae69eefc2f8dad1a219729fb219f43d4a63f85a92152b"
+      "bytes": 286,
+      "sha256": "d4c5ec8f945caf71cbaceeb96ee9ab40e5512761b0044ef9eef3ffdde257f886"
     },
     {
       "path": "AGENTS.md",
-      "bytes": 2715,
-      "sha256": "6890adad41285a83e6c476824a6e4280c9d2c0631b21921659e72ec1ed539cc9"
+      "bytes": 2848,
+      "sha256": "6f0d51f5bdb00b84b890bf0ac4bc6b01faed09e78b591d02ddb7789a3591ce4b"
     },
     {
       "path": "GITHUB-UPLOAD.md",
@@ -29,13 +30,13 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 13363,
-      "sha256": "f26c26f98399273ebdd491f6e93cc0847e7956fa54a9d196971090b0332971c5"
+      "bytes": 13648,
+      "sha256": "24370f6de810014e1b2349fba4519835662c749df56073ac83bbc418d44383ca"
     },
     {
       "path": "README.md",
-      "bytes": 10156,
-      "sha256": "d09368483f615cb714540172efbf616c00cd997785990c3d1df11238a207b9c3"
+      "bytes": 10479,
+      "sha256": "2525818ef5e35ff85103f7d3a116cc4638c7a2f0733593d6aaf9aed4d8bd59a7"
     },
     {
       "path": "app/build.gradle.kts",
@@ -346,6 +347,16 @@
       "path": "tools/verify_handoff.py",
       "bytes": 3132,
       "sha256": "8cc538185b7d887e4960fe814886a8a61e6b5f19baa907aac8b5638dd59b3b68"
+    },
+    {
+      "path": "signing/README.md",
+      "bytes": 1160,
+      "sha256": "2bc26e36334fa2dd834bdd2775e5b6e3166cf9614beffca01a607fdf90b0946a"
+    },
+    {
+      "path": "signing/debug.keystore",
+      "bytes": 2618,
+      "sha256": "9730dbb38dba898d72e4e31586b4cd1b293c0f66f9730d54b5672fd9ffbfe851"
     }
   ]
 }

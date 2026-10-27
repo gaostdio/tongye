@@ -15,3 +15,6 @@ __pycache__/
 *.db
 *.db-wal
 *.db-shm
+
+# Explicitly published debug key requested by the maintainer (2026-10-27)
+!/signing/debug.keystore
